@@ -1,0 +1,12 @@
+{
+  "username": "admin",
+  "password": "admin123456",
+  "vpn_TmnCode":"E012G2GF",
+  "vpn_HashSecret": "LYLKXSDQOWNXEMAHSPJBQHYCLNKHPGCM",
+  "vpn_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vpn_Returnurl": "https://localhost:3000",
+  "vpn_apiUrl":"https://sandbox.vnpayment.vn/merchant_webapi/merchant.html"
+  
+
+
+}
