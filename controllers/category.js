@@ -46,6 +46,7 @@ exports.post_category = async (req, res) => {
     try {
       let category = new Category();
       category.type = req.body.type;
+      category.code = req.body.code;
       category.name = req.body.name;
       category.image = req.body.image;
       category.show = req.body.show;

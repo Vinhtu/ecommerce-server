@@ -3,8 +3,11 @@ var mongoose = require("mongoose"); //chua cac truong thuoc tinh
 var Schema = mongoose.Schema;
 
 var categorySchemas = new Schema({
- 
   name: {
+    type: String,
+    require: true,
+  },
+  code: {
     type: String,
     require: true,
   },
@@ -15,7 +18,7 @@ var categorySchemas = new Schema({
   subcategory: [
     {
       type: mongoose.SchemaTypes.ObjectId,
-      ref:"subcategory",
+      ref: "subcategory",
     },
   ],
   show: {

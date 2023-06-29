@@ -22,17 +22,41 @@ const voucher = require("./voucher");
 const team = require("./team");
 const position = require("./position");
 const cartitem = require("./cartitem");
-const banner = require("./banner")
-const event = require("./event")
-const eventitem = require("./eventitem")
-const reportcomment = require("./reportcomment")
-const conversation = require("./conversation")
-const message = require("./message")
-const payment = require("./payment")
-const sizeadmin = require("./sizeadmin")
-const coloradmin = require("./coloradmin")
-const search = require("./search")
-
+const banner = require("./banner");
+const event = require("./event");
+const eventitem = require("./eventitem");
+const reportcomment = require("./reportcomment");
+const conversation = require("./conversation");
+const message = require("./message");
+const payment = require("./payment");
+const sizeadmin = require("./sizeadmin");
+const coloradmin = require("./coloradmin");
+const search = require("./search");
+const usagestatus = require("./usagestatus");
+const deliverymethod = require("./deliverymethod");
+const feature = require("./utils/feature");
+const gender = require("./utils/gender");
+const material = require("./utils/material");
+const modelproduct = require("./utils/modelproduct");
+const numberpart = require("./utils/numberpart");
+const operatingsystem = require("./utils/operatingsystem");
+const origin = require("./utils/origin");
+const processor = require("./utils/processor");
+const ram = require("./utils/ram");
+const rom = require("./utils/rom");
+const screenresolution = require("./utils/screenresolution");
+const screen = require("./utils/screen");
+const skintype = require("./utils/skintype");
+const stickerstyle = require("./utils/stickerstyle");
+const storagecapacity = require("./utils/storagecapacity");
+const typedevice = require("./utils/typedevice");
+const typelock = require("./utils/typelock");
+const typeshell = require("./utils/typeshell");
+const typewarranty = require("./utils/typewarranty");
+const warrantyperiod = require("./utils/warrantyperiod");
+const season = require("./utils/season");
+const sample = require("./utils/sample");
+const style = require("./utils/style");
 
 router.use("/api/account", account);
 router.use("/api/affilateshop", affilateshop);
@@ -64,10 +88,31 @@ router.use("/api/payment", payment);
 router.use("/api/sizeadmin", sizeadmin);
 router.use("/api/coloradmin", coloradmin);
 router.use("/api/search", search);
+router.use("/api/usagestatus", usagestatus);
+router.use("/api/deliverymethod", deliverymethod);
 
-
-
-
-
+router.use("/api/feature", feature);
+router.use("/api/gender", gender);
+router.use("/api/material", material);
+router.use("/api/modelproduct", modelproduct);
+router.use("/api/numberpart", numberpart);
+router.use("/api/operatingsystem", operatingsystem);
+router.use("/api/origin", origin);
+router.use("/api/processor", processor);
+router.use("/api/ram", ram);
+router.use("/api/rom", rom);
+router.use("/api/screenresolution", screenresolution);
+router.use("/api/screen", screen);
+router.use("/api/skintype", skintype);
+router.use("/api/stickerstyle", stickerstyle);
+router.use("/api/storagecapacity", storagecapacity);
+router.use("/api/typedevice", typedevice);
+router.use("/api/typelock", typelock);
+router.use("/api/typeshell", typeshell);
+router.use("/api/typewarranty", typewarranty);
+router.use("/api/warrantyperiod", warrantyperiod);
+router.use("/api/season", season);
+router.use("/api/sample", sample);
+router.use("/api/style", style);
 
 module.exports = router;
